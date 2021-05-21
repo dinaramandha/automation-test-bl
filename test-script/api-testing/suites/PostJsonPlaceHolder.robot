@@ -1,9 +1,6 @@
 *** Settings ***
-Documentation     Test Cases for Post JsonPlaceHolder API
-Library         RequestsLibrary
-
-*** Variables ***
-${content_type}=           application/json
+Documentation    Test Cases for Post JsonPlaceHolder API
+Library          RequestsLibrary
 
 *** Test Cases ***
 Post Request And Make Sure Return Valid Data
@@ -38,6 +35,6 @@ Post Method
 PostJsonPlaceHolder
     [Documentation]    Keyword to call PostJsonPlaceHolder.
     [Arguments]        ${body}
-    ${headers}         Create Dictionary    Content-Type=${content_type}
+    ${headers}         Create Dictionary    Content-Type=application/json
     ${response}        Post Method          uri=posts    payload=${body}    header=${headers}
     [Return]           ${response}
