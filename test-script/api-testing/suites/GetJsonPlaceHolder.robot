@@ -3,9 +3,6 @@ Documentation    Test Cases for Get JsonPlaceHolder API
 Library          RequestsLibrary
 Library          Assertion.py
 
-*** Variables ***
-${content_type}=           application/json
-
 *** Test Cases ***
 Get Request And Make Sure Status Code Return 200 Response
     [Documentation]                     Test to verify response status code should be 200 OK.
