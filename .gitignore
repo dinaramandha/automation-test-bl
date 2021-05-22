@@ -1,0 +1,7 @@
+# test results
+test-results/
+
+# robot logs
+log.html
+report.html
+output.xml
