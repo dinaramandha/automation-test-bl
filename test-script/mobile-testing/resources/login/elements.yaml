@@ -1,0 +1,8 @@
+login_page_elements:
+    login_link: id=appCompatTextViewLoginLink
+    login_email_field: id=textInputEditTextEmail
+    login_password_field: id=textInputEditTextPassword
+    login_button: id=appCompatButtonLogin
+    login_name_textview: id=textViewName
+    login_email_textview: id=textViewEmail
+    login_password_textview: id=textViewPassword

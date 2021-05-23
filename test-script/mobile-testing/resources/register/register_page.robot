@@ -1,8 +1,16 @@
 *** Settings ***
-Documentation     Resources contains keyword activity in register page
+Documentation    Resources contains keyword activity in register page
 Variables        %{WORKDIR}/test-script/mobile-testing/resources/register/elements.yaml
 
 *** Keywords ***
+Register Successfully
+    [Documentation]               Keyword to register successfully.
+    &{user}=                      Generate User Data
+    Tap Create Account Button
+    Fill Register Form            name=${user.name}    email=${user.email}    password=${user.password}    confirm_password=${user.confirm_password}
+    Tap Register Button
+    [Return]                      ${user}
+
 Tap Create Account Button
     [Documentation]                  Keyword to tap No account yet? Create on button.
     Wait Until Element Is Visible    ${register_page_elements.register_link}
