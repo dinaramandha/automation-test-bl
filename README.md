@@ -1,4 +1,4 @@
-# bl-automation-test
+# robot framework-automation-test-example
 
 
 ## Requirements
